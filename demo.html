@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	
+    <title>Sprite Animation Demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+  <link href="stile.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+      
+  
+  
+		<div class="sfondo">
+            
+            
+            
+            
+		<h1> Let the sun go Down</h1>
+             <h2>"When I admire the wonders of a sunset or the beauty of the moon,<br> my soul expands in the worship of the creator."
+
+</h2>
+<h3 >- Mahatma Gandhi</h3>
+					<div id='spriteanim' 
+						 data-baseurl='skio_' 
+						 data-grid='13x9' 
+						 data-blocksize='300x300' 
+						 data-frames='117' 
+						 data-fps='20' 
+						 data-autoplay='true' 
+						 data-autoload='true' 
+						 data-retina='false'>
+
+					</div>
+      </div>	
+      <div class="maincontent">
+      
+          <img src="nature.svg">
+      <p>Sunset or sundown, is the daily disappearance of the Sun below the western horizon as a result of Earth's rotation.
+
+The time of sunset is defined in astronomy as the moment when the trailing edge of the Sun's disk disappears below the horizon. Near to the horizon, atmospheric refraction causes the ray path of light from the Sun to be distorted to such an extent that geometrically the Sun's disk is already about one diameter below the horizon when sunset is observed.  </p>
+      
+      </div>
+      
+      
+		<div class="footer">
+        <img src="sole.png" width="61" height="56" alt=""/>
+        
+            <p>"It is almost impossible to<br> watch a sunset and not<br>dream."<br></p>
+  
+  <p>Bern Williams</p>    
+            </div>    
+        
+		<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+		<script src="lib/jquery.spriteanim.js"></script>
+		
+		<script>
+			jQuery(function($) {
+				$('#spriteanim').spriteanim();
+
+				$('#spriteanim').spriteanim().on('frame-116-shown', function() {
+					//$(this).spriteanim('stop');
+				});
+
+			});
+
+
+
+		</script>
+  </body>
+</html>
